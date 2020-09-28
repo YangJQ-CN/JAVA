@@ -13,6 +13,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>JAVA_01_基础语法</module>
+        <module>JAVA_02_高级特性</module>
+        <module>JAVA_03_核心编程</module>
+        <module>JAVA_04_算法可视化</module>
     </modules>
 
     <dependencies>

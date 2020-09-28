@@ -40,4 +40,9 @@ public class 程序结构 {
             default:;
         }
     }
+
+    @Test
+    public void 循环结构() {
+
+    }
 }
