@@ -6,7 +6,15 @@
 
     <groupId>cn.yjq</groupId>
     <artifactId>JAVA</artifactId>
+    <packaging>pom</packaging>
     <version>1.0.0</version>
+    <modules>
+        <module>JAVA_01_Java程序员</module>
+        <module>JAVA_02_Java初级软件工程师</module>
+        <module>JAVA_03_Java中级软件工程师</module>
+        <module>JAVA_04_Java高级软件工程师</module>
+        <module>JAVA_05_Java系统架构师</module>
+    </modules>
 
 
 </project>
