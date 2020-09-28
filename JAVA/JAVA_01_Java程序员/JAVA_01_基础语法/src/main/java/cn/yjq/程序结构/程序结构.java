@@ -1,4 +1,4 @@
-package cn.yjq.Java_基础语法.程序结构;
+package cn.yjq.程序结构;
 
 import org.junit.Test;
 

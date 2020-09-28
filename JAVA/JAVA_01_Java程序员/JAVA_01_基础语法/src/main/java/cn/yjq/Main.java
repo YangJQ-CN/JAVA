@@ -1,4 +1,4 @@
-package cn.yjq.Java_基础语法;
+package cn.yjq;
 
 
 import org.junit.Test;
