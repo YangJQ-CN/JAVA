@@ -1,4 +1,4 @@
-package cn.yjq.数据类型;
+package cn.yjq._数据类型;
 
 
 import org.junit.Test;
@@ -54,7 +54,7 @@ public class 数据类型 {
      * （public final class String）因为有final修饰，不能重写
      */
     @Test
-    void String_类型() {
+    void 字符串类型() {
 
         /**
          * 常量池中只有一份str
@@ -77,8 +77,7 @@ public class 数据类型 {
 
         int[] 数组1 = new int[10];
         int[] 数组2 = {1,2,3,4,5,6,7,8,9,10};
-
-
+        int[] 数组3 = new int[]{1,2,3,4,5,6,7,8,9,10};
 
     }
 

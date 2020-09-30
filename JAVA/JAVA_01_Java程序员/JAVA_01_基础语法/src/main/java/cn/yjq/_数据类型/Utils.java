@@ -1,4 +1,4 @@
-package cn.yjq.数据类型;
+package cn.yjq._数据类型;
 
 import java.util.Random;
 
