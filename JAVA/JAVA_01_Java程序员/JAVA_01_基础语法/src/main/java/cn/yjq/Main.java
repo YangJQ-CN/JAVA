@@ -15,8 +15,4 @@ public class Main {
         System.out.println("集成单元测试");
     }
 
-    @Test
-    public void 数组字面量的类型() {
-        int[] 数组;
-    }
 }

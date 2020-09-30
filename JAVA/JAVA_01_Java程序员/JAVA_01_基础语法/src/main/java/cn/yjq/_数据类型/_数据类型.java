@@ -1,6 +1,7 @@
 package cn.yjq._数据类型;
 
 
+import cn.yjq.随机工具._随机数;
 import org.junit.Test;
 
 public class _数据类型 {
@@ -16,16 +17,16 @@ public class _数据类型 {
          * 补码      01111111       10000001         00000000                 10000000 [（-127） + （-1） = 10000001 + 11111111 = 10000000]
          * 补码零唯一，运算符合方便
          */
-        byte byte_var = (byte) Utils.getRandomNum(-128, 127);
+        byte byte_var = (byte) _随机数._获取指定范围的int随机数(-128, 127);
 
         /**
          * short 二字节 初始值：0
          */
-        short short_var = (short) Utils.getRandomNum(-32768, 32767);
+        short short_var = (short) _随机数._获取指定范围的int随机数(-32768, 32767);
         /**
          * int 四字节 初始值：0
          */
-        int int_var = Utils.getRandomNum(-2147483648, 2147483647);
+        int int_var = _随机数._获取指定范围的int随机数(-2147483648, 2147483647);
         /**
          * long 八字节 初始值：0l
          */
