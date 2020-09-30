@@ -4,7 +4,7 @@ import cn.yjq._面向对象.Java_01_类._测试._测试类_不同包;
 import org.junit.Test;
 
 /**
- * @ClassName _类
+ * @ClassName _有内部类的类
  * @Date 2020/9/29 9:15
  * @Author YangJQ
  * @Description TODO

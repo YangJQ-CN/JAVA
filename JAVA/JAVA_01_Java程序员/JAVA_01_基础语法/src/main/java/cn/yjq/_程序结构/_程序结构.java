@@ -2,7 +2,7 @@ package cn.yjq._程序结构;
 
 import org.junit.Test;
 
-public class 程序结构 {
+public class _程序结构 {
 
     /**
      * 顺序结构不能使用 break 和 continue

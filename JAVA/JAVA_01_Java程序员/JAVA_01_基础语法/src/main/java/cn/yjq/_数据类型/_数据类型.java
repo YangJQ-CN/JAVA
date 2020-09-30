@@ -3,7 +3,7 @@ package cn.yjq._数据类型;
 
 import org.junit.Test;
 
-public class 数据类型 {
+public class _数据类型 {
 
     @Test
     void 基本数据类型() {
