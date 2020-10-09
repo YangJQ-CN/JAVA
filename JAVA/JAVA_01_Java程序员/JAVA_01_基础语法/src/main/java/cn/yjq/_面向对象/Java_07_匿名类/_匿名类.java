@@ -10,7 +10,7 @@ import org.junit.Test;
  **/
 public class _匿名类 {
 
-    _匿名类的父类 匿名对象 = new _匿名类的父类() {
+    _匿名类的父接口 匿名对象 = new _匿名类的父接口() {
 
         @Override
         public void _匿名类的方法() {
@@ -26,7 +26,7 @@ public class _匿名类 {
 
 }
 
-interface  _匿名类的父类 {
+interface _匿名类的父接口 {
 
     public void _匿名类的方法();
 }
