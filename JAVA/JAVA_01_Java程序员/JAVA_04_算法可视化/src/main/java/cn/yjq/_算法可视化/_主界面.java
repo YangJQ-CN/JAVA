@@ -45,7 +45,7 @@ public class _主界面 {
 
         JPanel 冒泡排序面板 = new JPanel();
         冒泡排序面板.add(new _冒泡排序());
-        内容面板.setRightComponent(冒泡排序面板);
+        内容面板.setRightComponent(new _冒泡排序());
 
         主窗口.add(内容面板);
         主窗口.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

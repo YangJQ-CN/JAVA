@@ -30,6 +30,9 @@ public class _包装类知识 {
      *      1.不能用于两个Integer对象双等判断两个对象的值相等,会出现错误的,
      *        java中Integer,String判断相等与integer的比较大小不适合频繁(intger.maxvalue次左右)的用于计算,
      *        这个缺陷一般项目都遇不到的(猜测)规避确定的方法:要用双等判断两个对象的值是否相等时,要调用intValue方法
+     *
+     *  ...
+     *
      */
     @Test
     public void _包装类 () {
