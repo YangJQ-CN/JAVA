@@ -1,5 +1,9 @@
 package cn.yjq._算法可视化._算法界面._通用组件;
 
+import cn.yjq._算法可视化._算法界面._冒泡排序;
+import cn.yjq._算法可视化._算法界面._冒泡排序借鉴.BubbleSortPanel;
+import cn.yjq._算法可视化._算法界面._冒泡排序借鉴.BubbleSortVisualizationFrame;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -8,8 +12,10 @@ import java.awt.event.ActionListener;
 public class _通用框架 extends JPanel {
 
     private Container contentPane;
+
     /**
      * 设置三个Menu Item，分别用于开始程序，调整运行的速度以及退出程序
+     *
      */
     private JMenuItem startMI = new JMenuItem("Start");
 
@@ -37,6 +43,54 @@ public class _通用框架 extends JPanel {
 
     public int speedFlag = 1;
 
+    /**
+     * 冒泡排序可视化的Panel
+     */
+    private _冒泡排序 panel;
+
+    public _通用框架(){
+
+
+        JMenuBar menuBar = new JMenuBar();
+
+        JMenu setMenu = new JMenu("Set");
+
+        setMenu.setMnemonic('s');
+
+        menuBar.add(setMenu);
+
+        setMenu.add(startMI);
+        setMenu.addSeparator();
+
+        setMenu.addSeparator();
+        setMenu.add(speedMenu);
+        setMenu.addSeparator();
+        setMenu.add(exitMI);
+
+        ButtonGroup group = new ButtonGroup();
+        group.add(speedMI1);
+        group.add(speedMI2);
+        group.add(speedMI3);
+        group.add(speedMI4);
+        group.add(speedMI5);
+
+        speedMenu.add(speedMI1);
+        speedMenu.add(speedMI2);
+        speedMenu.add(speedMI3);
+        speedMenu.add(speedMI4);
+        speedMenu.add(speedMI5);
+
+//        startMI.addActionListener(new BubbleSortVisualizationFrame.StartAction());
+//        speedMI1.addActionListener(new BubbleSortVisualizationFrame.SpeedAction());
+//        speedMI2.addActionListener(new BubbleSortVisualizationFrame.SpeedAction());
+//        speedMI3.addActionListener(new BubbleSortVisualizationFrame.SpeedAction());
+//        speedMI4.addActionListener(new BubbleSortVisualizationFrame.SpeedAction());
+//        speedMI5.addActionListener(new BubbleSortVisualizationFrame.SpeedAction());
+//        exitMI.addActionListener(new BubbleSortVisualizationFrame.ExitAction());
+
+        this.add(menuBar, BorderLayout.NORTH);
+        startMI.setEnabled(true);
+    }
 
     private class StartAction implements ActionListener {
         public void actionPerformed(ActionEvent event) {

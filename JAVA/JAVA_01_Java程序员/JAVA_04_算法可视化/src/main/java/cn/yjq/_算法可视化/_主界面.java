@@ -3,6 +3,7 @@ package cn.yjq._算法可视化;
 import cn.yjq._算法可视化._工具包._屏幕工具类;
 import cn.yjq._算法可视化._算法界面._冒泡排序;
 import cn.yjq._算法可视化._算法界面._冒泡排序借鉴.BubbleSortVisualizationFrame;
+import cn.yjq._算法可视化._算法界面._通用组件._通用框架;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
@@ -43,8 +44,6 @@ public class _主界面 {
         JTree 算法目录 = new JTree(根目录);
         内容面板.setLeftComponent(算法目录);
 
-        JPanel 冒泡排序面板 = new JPanel();
-        冒泡排序面板.add(new _冒泡排序());
         内容面板.setRightComponent(new _冒泡排序());
 
         主窗口.add(内容面板);

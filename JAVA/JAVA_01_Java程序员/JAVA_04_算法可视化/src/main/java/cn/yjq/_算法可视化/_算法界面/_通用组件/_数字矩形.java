@@ -28,8 +28,7 @@ public class _数字矩形 {
 	public void draw(Graphics2D g2) {
 		int clientX = 30 + x * 30;
 		int clientY = 20 + y * 10;
-		Rectangle2D.Double rect = new Rectangle2D.Double(clientX, clientY, 20,
-				value * 20);
+		Rectangle2D.Double rect = new Rectangle2D.Double(clientX, clientY, 20, value * 20);
 		g2.setPaint(color);
 		g2.fill(rect);
 		g2.setPaint(Color.BLACK);
