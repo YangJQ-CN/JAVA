@@ -3,7 +3,6 @@ package cn.yjq._算法可视化._算法界面;
 import cn.yjq._算法可视化._算法界面._冒泡排序借鉴.BubbleSortPanel;
 import cn.yjq._算法可视化._算法界面._冒泡排序借鉴.BubbleSortVisualizationFrame;
 import cn.yjq._算法可视化._算法界面._通用组件._数字矩形;
-import cn.yjq._算法可视化._算法界面._通用组件._通用框架;
 
 import javax.swing.*;
 import java.awt.*;

@@ -2,8 +2,6 @@ package cn.yjq._算法可视化;
 
 import cn.yjq._算法可视化._工具包._屏幕工具类;
 import cn.yjq._算法可视化._算法界面._冒泡排序;
-import cn.yjq._算法可视化._算法界面._冒泡排序借鉴.BubbleSortVisualizationFrame;
-import cn.yjq._算法可视化._算法界面._通用组件._通用框架;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
