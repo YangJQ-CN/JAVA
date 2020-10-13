@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>JAVA_02_Java初级软件工程师</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>JAVA_WEB</module>
+    </modules>
 
 
 </project>
