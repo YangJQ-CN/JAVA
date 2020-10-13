@@ -36,7 +36,5 @@ public class _反射知识 {
         } catch (ClassNotFoundException e) {
             out.println("没有找到此类");
         }
-
     }
-
 }

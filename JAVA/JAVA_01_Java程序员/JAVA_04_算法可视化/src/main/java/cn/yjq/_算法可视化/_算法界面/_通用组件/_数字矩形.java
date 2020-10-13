@@ -6,9 +6,9 @@ import java.awt.geom.Rectangle2D;
 
 public class _数字矩形 {
 
-	private int x;
+	private Integer index;
 
-	private int y;
+	private Float width;
 
 	private int value;
 
@@ -17,23 +17,28 @@ public class _数字矩形 {
 	public _数字矩形() {
 	}
 
-	public _数字矩形(int x, int y, int value, Color color) {
-		this.x = x;
-		this.y = y;
+	public  _数字矩形(int index, float width, int value, Color color) {
+		this.index = index;
+		this.width = width;
 		this.color = color;
 		this.value = value;
-
 	}
 
 	public void draw(Graphics2D g2) {
-		int clientX = 30 + x * 30;
-		int clientY = 20 + y * 10;
-		Rectangle2D.Double rect = new Rectangle2D.Double(clientX, clientY, 20, value * 20);
+
+		Float clientX =this.width / 5 + (index - 1) * this.width;
+		int clientY = 545 -30 - this.value;
+//		System.out.println(this.width + " : " + clientX);
+        Rectangle2D.Double rect = new Rectangle2D.Double(clientX, clientY, this.width / 3 * 2, this.value);
 		g2.setPaint(color);
 		g2.fill(rect);
 		g2.setPaint(Color.BLACK);
 		g2.draw(rect);
-		g2.drawString(String.valueOf(value), clientX, clientY - 10);
+		if (this.width > 20) {
+            g2.drawString(String.valueOf(value / 3), clientX, clientY + this.value + 15);
+        } else {
+            g2.drawString("-", clientX, clientY + this.value + 15);
+        }
 	}
 
 	/**
@@ -54,31 +59,31 @@ public class _数字矩形 {
 	/**
 	 * @return the x
 	 */
-	public int getX() {
-		return x;
+	public int getIndex() {
+		return index;
 	}
 
 	/**
-	 * @param x
+	 * @param index
 	 *            the x to set
 	 */
-	public void setX(int x) {
-		this.x = x;
+	public void setIndex(int index) {
+		this.index = index;
 	}
 
 	/**
 	 * @return the y
 	 */
-	public int getY() {
-		return y;
+	public Float getWidth() {
+		return width;
 	}
 
 	/**
-	 * @param y
+	 * @param width
 	 *            the y to set
 	 */
-	public void setY(int y) {
-		this.y = y;
+	public void setWidth(float width) {
+		this.width = width;
 	}
 
 	/**
