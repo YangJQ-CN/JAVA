@@ -7,9 +7,9 @@
     
     <servlet>
         <servlet-name>Servlet_learning</servlet-name>
-        <servlet-class>cn.yjq.web.servlet.Servlet_learning</servlet-class>
+        <servlet-class>cn.yjq.web.servlet.Servlet_extends_HttpServlet</servlet-class>
     </servlet>
-    
+
     <servlet-mapping>
         <servlet-name>Servlet_learning</servlet-name>
         <url-pattern>/Servlet_learning</url-pattern>
